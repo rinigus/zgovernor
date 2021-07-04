@@ -6,4 +6,4 @@ After=user-session.target
 ExecStart=/usr/bin/zgovernor
 
 [Install]
-WantedBy=post-user-session.target
+WantedBy=multi-user.target
