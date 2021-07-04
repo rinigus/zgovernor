@@ -1,0 +1,9 @@
+[Unit]
+Description=Z Governor
+After=user-session.target
+
+[Service]
+ExecStart=/usr/bin/zgovernor
+
+[Install]
+WantedBy=post-user-session.target
