@@ -1,5 +1,5 @@
 Name: zgovernor
-Version: 0.1
+Version: 0.2
 Release: 1
 
 Summary: CPU and GPU Governor
