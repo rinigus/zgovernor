@@ -9,6 +9,8 @@
 
 #define CONFIG_DISPLAY_ON  "display on"
 #define CONFIG_DISPLAY_OFF "display off"
+#define CONFIG_COMPOSITOR_MAIN "compositor main"
+#define CONFIG_COMPOSITOR_WINDOW_SHOWN "compositor window shown"
 
 struct ConfigSetting {
   ConfigSetting(const QString &fname, const QString &cont): filename(fname), content(cont) {}

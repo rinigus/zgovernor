@@ -11,7 +11,7 @@ Config::Config(QObject *parent) : QObject(parent)
 {
   QSettings settings(CONFIG_FILE, QSettings::IniFormat);
 
-  QStringList conditions = {CONFIG_DISPLAY_OFF, CONFIG_DISPLAY_ON};
+  QStringList conditions = {CONFIG_DISPLAY_OFF, CONFIG_DISPLAY_ON, CONFIG_COMPOSITOR_MAIN, CONFIG_COMPOSITOR_WINDOW_SHOWN};
 
   for (const QString &c: conditions)
     {

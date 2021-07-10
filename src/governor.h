@@ -16,14 +16,16 @@ public:
 signals:
 
 public slots:
-  void onDBusMessage(QString message);
+  void onMCEDispayStatus(QString message);
+  void onComposerTopWindow(int topWindow);
 
 protected:
-
   void applyConfig(const QString &cname);
 
 protected:
   Config &m_config;
+  bool m_displayOn = true;
+  bool m_composerOnTop = false;
 
   BackgroundActivity *m_activity;
 };
