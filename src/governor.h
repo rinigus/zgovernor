@@ -25,7 +25,7 @@ protected:
 protected:
   Config &m_config;
   bool m_displayOn = true;
-  bool m_composerOnTop = false;
+  bool m_composerOnTop = true;
 
   BackgroundActivity *m_activity;
 };
