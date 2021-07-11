@@ -16,6 +16,8 @@ BuildRequires: pkgconfig(keepalive)
 %description
 Set CPU, GPU and other properties depending on screen state
 
+%prep
+%setup -q
 
 %build
 
