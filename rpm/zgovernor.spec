@@ -34,8 +34,8 @@ make %{?_smp_mflags}
 %install
 rm -rf %{buildroot}
 
-mkdir -p %{buildroot}%{_sysconfdir}
-cp example/zgovernor.ini %{buildroot}%{_sysconfdir}/zgovernor.ini
+#mkdir -p %{buildroot}%{_sysconfdir}
+#cp example/zgovernor.ini %{buildroot}%{_sysconfdir}/zgovernor.ini
 
 mkdir -p %{buildroot}%{_unitdir}
 cp zgovernor.service %{buildroot}%{_unitdir}
@@ -62,5 +62,5 @@ systemctl daemon-reload || :
 %files
 %defattr(-,root,root,-)
 %{_bindir}/%{name}
-%config(noreplace) %{_sysconfdir}/zgovernor.ini
+#%config(noreplace) %{_sysconfdir}/zgovernor.ini
 %{_unitdir}/%{name}.service
